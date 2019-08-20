@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      "react-qiniu@0.4.0",
+      "/Users/alexwang/Documents/workspace/wisflow/reactive_customer_list"
+    ]
+  ],
+  "_from": "react-qiniu@0.4.0",
+  "_id": "react-qiniu@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-EL1uEU39WoKEx4gu5vEZ6/w6P1k=",
+  "_location": "/react-qiniu",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-qiniu@0.4.0",
+    "name": "react-qiniu",
+    "escapedName": "react-qiniu",
+    "rawSpec": "0.4.0",
+    "saveSpec": null,
+    "fetchSpec": "0.4.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-qiniu/-/react-qiniu-0.4.0.tgz",
+  "_spec": "0.4.0",
+  "_where": "/Users/alexwang/Documents/workspace/wisflow/reactive_customer_list",
+  "author": {
+    "name": "Yuan He",
+    "email": "yuan@liulishuo.com"
+  },
+  "bugs": {
+    "url": "https://github.com/lingochamp/react-qiniu/issues"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.30",
+    "superagent": "^1.2.0",
+    "superagent-bluebird-promise": "^2.0.2",
+    "underscore": "^1.9.1",
+    "underscore.string": "^3.3.5"
+  },
+  "description": "A React Component to upload file to Qiniu ",
+  "devDependencies": {
+    "babel-eslint": "^3.1.18",
+    "babel-jest": "^5.3.0",
+    "eslint": "^0.23.0",
+    "eslint-plugin-react": "^2.5.2",
+    "jest-cli": "^0.4.13",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "homepage": "https://github.com/lingochamp/react-qiniu#readme",
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ],
+    "testPathDirs": [
+      "<rootDir>"
+    ]
+  },
+  "keywords": [
+    "react-component",
+    "react",
+    "qiniu",
+    "upload",
+    "drag",
+    "drop"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-qiniu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lingochamp/react-qiniu.git"
+  },
+  "scripts": {
+    "lint": "eslint ./; true",
+    "test": "jest"
+  },
+  "version": "0.4.0"
+}
