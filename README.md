@@ -36,6 +36,15 @@ var ReactQiniuDemo = React.createClass({
         });
     },
 
+    /* 
+     * enlargePolicy: 'spaceFirst' means if the space occupied by the image is smaller/greater than the min/max value, the compression or enlargement would stop
+     * enlargePolicy: 'sizeFirst' means if the width/height of the image is smaller/greater than the min/max value, the compression or enlargement would stop
+     */
+    isAdjustImageSize: () => {
+        // {minsize: 200 * 1024, maxsize: 500 * 1024, standardLength: 1200, enlargePolicy: 'sizeFirst'}
+        return {minsize: 200 * 1024, maxsize: 500 * 1024, standardLength: 1200, enlargePolicy: 'spaceFirst'};
+    }
+
     onDrop: function (files) {
         this.setState({
             files: files
@@ -52,7 +61,7 @@ var ReactQiniuDemo = React.createClass({
     render: function () {
       return (
           <div>
-            <Qiniu onDrop={this.onDrop} size={150} token={this.state.token} onUpload={this.onUpload}>
+            <Qiniu onDrop={this.onDrop} adjustImageSize={isAdjustImageSize()} size={150} token={this.state.token} onUpload={this.onUpload}>
               <div>Try dropping some files here, or click to select files to upload.</div>
             </Qiniu>
           </div>
